@@ -17,9 +17,15 @@ gem 'simple_form'
 gem 'autoprefixer-rails'
 
 group :development, :test do
+  gem 'capybara'
+  gem 'poltergeist'
+  gem 'launchy'
+  gem 'minitest-reporters'
+  # [...]
+
   gem 'binding_of_caller'
   gem 'better_errors'
-  
+
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'spring'

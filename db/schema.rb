@@ -112,4 +112,4 @@ ActiveRecord::Schema.define(version: 20170320205930) do
   add_foreign_key "tags", "movies"
   add_foreign_key "tags", "users"
 end
-end
+

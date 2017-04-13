@@ -1,0 +1,47 @@
+http://localhost:3000/lists/11/edit?utf8=%E2%9C%93&movie%5Bname%5D=Dog&commit=Search
+http://localhost:3000/lists/11/edit?utf8=%E2%9C%93&Dog%5Bname%5D=Dog&commit=Search
+
+
+///pushing to heroku
+git remote -v
+git push heroku master
+heroku run rails db:migrate
+heroku open
+heroku run rails bundle install
+figaro heroku:set -e production
+heroku restart
+
+///pushing to heroku
+git remote -v
+git push heroku master
+heroku runs rails db:migrate
+heroku open
+
+
+list1 = List.new(name: ”Dans great list”, user_id: user1)
+list1 = List.new(name: ”Dans great list”, user_id: user1)
+
+
+///notes create models terminal commands
+rails g model Movie name:string
+rails g model Genre name:string
+rails g model List user:references
+
+rails g model MovieGenre movie:references genre:references
+rails g model Tag name:string movie:references user:references
+rails g model Favourite movie:references user:references
+rails g model MovieList movie:references list:references
+rails g model Suggestion comments:text user:references list:references
+rails g model Follower user:references
+
+///rails c///
+
+u = User.first
+u.lists
+u.lists.create(name: "Ruis list")
+l = List.first
+MovieList.create(list_id: 1, movie_id: 48)
+l.movies
+
+* we create a connection between movie_id list_id on each create. Would have to use a .each to interate over and enter multiple movie_id's
+

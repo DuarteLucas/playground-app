@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Tmdb::Api.key("f042a824cd1b94336f3d940c86ccc873")
+
+@movie = Tmdb::Genre.movies(18)

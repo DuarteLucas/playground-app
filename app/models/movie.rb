@@ -18,3 +18,5 @@ class Movie < ApplicationRecord
   # has_many :users, through: :tags # These relationship not required yet
   # has_many :users, through: :favourites # These relationship not required yet
 end
+
+
